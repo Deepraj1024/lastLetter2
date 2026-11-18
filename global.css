@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+@import 'uniwind';
+
+@import 'heroui-native/styles';
+
+@theme {
+    --font-black: "Inter_900Black";
+    --font-extra-bold: "Inter_800ExtraBold";
+    --font-bold: "Inter_700Bold";
+    --font-semibold: "Inter_600SemiBold";
+    --font-normal: "Inter_400Regular";
+}
+
+@layer theme {
+    @variant light {
+        --background: oklch(29.387% 0.09721 255.135);
+        --foreground: var(--color-white);
+        --primary: oklch(29.387% 0.09721 255.135);
+        --accent: oklch(78.701% 0.1268 235.153);
+        --secondary: oklch(38.161% 0.12279 255.85);
+        --default-foreground: oklch(21.549% 0.01827 255.748);
+        --warning: oklch(80.026% 0.15113 86.652);
+        --success: oklch(90.585% 0.19984 139.668);
+        --danger: oklch(66.698% 0.21751 25.305);
+        --danger-foreground: var(--color-red-200);
+        --muted: oklch(100% 0.00011 271.152 / 0.502);
+
+        --border: oklch(50.405% 0.16045 255.903);
+        --default: var(--white);
+        --surface: var(--secondary);
+        --surface-foreground: var(--white);
+
+        --overlay: var(--secondary);
+
+        --surface-secondary: oklch(41.717% 0.11714 254.843);
+        --surface-tertiary: oklch(42.96% 0.11375 254.232);
+
+        --field-border: var(--border);
+        --field-background: var(--surface);
+        --field-foreground: var(--white);
+        --field-placeholder: var(--color-slate-400);
+    }
+
+    @variant dark {
+        --background: oklch(29.387% 0.09721 255.135);
+        --foreground: var(--color-white);
+        --primary: oklch(29.387% 0.09721 255.135);
+        --accent: oklch(78.701% 0.1268 235.153);
+        --secondary: oklch(38.161% 0.12279 255.85);
+        --default-foreground: oklch(21.549% 0.01827 255.748);
+        --warning: oklch(80.026% 0.15113 86.652);
+        --success: oklch(90.585% 0.19984 139.668);
+        --danger: oklch(66.698% 0.21751 25.305);
+        --danger-foreground: var(--color-red-200);
+        --muted: oklch(100% 0.00011 271.152 / 0.502);
+
+        --border: oklch(50.405% 0.16045 255.903);
+        --default: var(--white);
+        --surface: var(--secondary);
+        --surface-foreground: var(--white);
+
+        --overlay: var(--secondary);
+
+        --surface-secondary: oklch(41.717% 0.11714 254.843);
+        --surface-tertiary: oklch(42.96% 0.11375 254.232);
+
+        --field-border: var(--border);
+        --field-background: var(--surface);
+        --field-foreground: var(--white);
+        --field-placeholder: var(--white);
+    }
+}

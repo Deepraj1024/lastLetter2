@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Chabi Partner",
+    "slug": "chabi-partner",
+    "scheme": "chabi-partner",
+    "version": "1.0.13",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "icon": "./src/assets/images/icon.png",
+    "android": {
+      "versionCode": 18,
+      "package": "com.chabi.partner",
+      "allowBackup": false,
+      "predictiveBackGestureEnabled": false
+    },
+    "ios": {
+      "supportsTablet": false,
+      "appleTeamId": "KH2BG837LN",
+      "bundleIdentifier": "com.chabi.partner",
+      "buildNumber": "18",
+      "infoPlist": {
+        "LSApplicationCategoryType": "public.app-category.business",
+        "NSPhotoLibraryUsageDescription": "Allow photo access to upload KYC documents.",
+        "NSCameraUsageDescription": "Allow camera access to capture KYC documents and selfies.",
+        "NSMicrophoneUsageDescription": "Allow microphone access for video KYC verification.",
+        "NSLocationWhenInUseUsageDescription": "Allow location access for KYC verification.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Allow location access for KYC verification."
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#002B5B",
+          "image": "./src/assets/images/chabi-partner.png",
+          "imageWidth": 200,
+          "resizeMode": "cover"
+        }
+      ],
+      "expo-image",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usePrecompiledHeaders": true,
+            "minSdkVersion": 28
+          }
+        }
+      ],
+      "expo-status-bar"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
